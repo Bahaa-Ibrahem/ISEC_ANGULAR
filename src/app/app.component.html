@@ -1,0 +1,79 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col col-sm-12">
+            <router-outlet></router-outlet> 
+        </div>
+    </div>
+</div>
+
+<!-- <app-posts></app-posts> -->
+            <!-- <app-signup-form></app-signup-form> -->
+            <!-- <app-contact-form></app-contact-form> -->
+            <!-- <input type="text" [appInputFormat]="'lowercase'">
+            <span>{{saveTraversalOperator.ifo?.name}}</span>
+            <h1 [ngClass]="{'bkgr': val, 'bkgr2': !val}"> Welcome to ngClass in angular</h1>
+            <p [ngStyle]="{
+                'fontSize': val ? '60px' : '15px', 
+                'color': val ? 'green' : 'gray',
+                'fontWeight': val ? 'bold' : 'normal'
+            }">
+                Welcome to ngStyle in angular
+            </p>
+            {{className}}
+            <ul class="nav nav-pills">
+                <li [class.active]="viewMode == 'login'"><button [ngClass]="{'btn btn-danger' : viewMode == 'login'}" (click)="viewMode = 'login'">Login</button></li>
+                <li [class.active]="viewMode == 'register'"><button [ngClass]="{'btn btn-danger' : viewMode == 'register'}" (click)="viewMode = 'register'">Register</button></li>
+            </ul>
+            <div [ngSwitch]='viewMode'>
+                <div *ngSwitchCase="'login'">
+                    <form>
+                        <label>Email</label>
+                        <input class="col-sm-3 form-control">
+                        <label>Pssword</label>
+                        <input class="col-sm-3 form-control">
+                    </form>                    
+                </div>
+                <div *ngSwitchCase="'register'">
+                    <form>
+                        <label>Name</label>
+                        <input class="col-sm-3 form-control">
+                        <label>Email</label>
+                        <input class="col-sm-3 form-control">
+                        <label>Pssword</label>
+                        <input class="col-sm-3 form-control">
+                        <label>Confirm Pssword</label>
+                        <input class="col-sm-3 form-control">
+                    </form>
+                </div>
+                <div *ngSwitchDefault>Otherwise</div>
+            </div>
+
+            <div *ngIf='courses.length>0; then coursesList else noCourses'></div>
+            <button class=" btn btn-success" (click)="loadCourses()">Load Course</button>
+            <ng-template #coursesList>
+                <br>
+                <button class="btn btn-success" (click)="addCourse()">Add Course</button>
+                <h1> List of courses </h1>
+                <ul>
+                    <li *ngFor='let course of courses; trackBy: trackCourses'>
+                        {{course}}
+                        <span *ngIf='first'>The first course</span>
+                        <span *ngIf='last'>The last course</span>
+                        <button class="btn btn-danger" (click)="removeCourse(course)">Remove Course</button>
+                    </li>
+                </ul>
+            </ng-template>
+            
+            <ng-template #noCourses>
+                <h1> No courses </h1>
+            </ng-template> -->
+             <!-- <app-course></app-course>
+            <app-favorite [isFavorite]='post.isFavorite' (change)='onFavoriteChange($event)'></app-favorite>
+            <bootstarp-panel>
+                <div class="heading">Heading</div>
+                <div class="body">
+                    <h2>Body</h2>
+                    <p>Something here...</p>
+                </div>
+            </bootstarp-panel> -->

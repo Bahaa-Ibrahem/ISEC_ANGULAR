@@ -1,0 +1,17 @@
+<form #form="ngForm" (ngSubmit)="signUp(form.value)">
+    <h2 class="form-signin-heading">Please sign up</h2>
+
+    <div *ngIf="invalidLogin" class="alert alert-danger">
+        Invalid username and/or password!
+    </div>
+    <label for="inputName" class="sr-only">Name</label>
+    <input required type="text" id="inputUserName" name="name" ngModel class="form-control" placeholder="Name">
+
+    <label for="inputEmail" class="sr-only">Email</label>
+    <input required type="email" id="inputEmail" name="email" ngModel class="form-control" placeholder="E-mail">
+
+    <label for="inputPasssword" class="sr-only">Password</label>
+    <input required type="password" id="inputPasssword" name="password" ngModel class="form-control" placeholder="Password"> 
+
+    <button [disabled]="!form.valid" class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+</form>

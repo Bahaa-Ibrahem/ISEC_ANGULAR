@@ -1,0 +1,10 @@
+<form #form2="ngForm" (ngSubmit)="getWeather(form2.value)">
+    <label for="inputCityName" class="sr-only">City</label>
+    <input required type="text" id="inputCityName" name="name" ngModel class="form-control" placeholder="City Name">
+    <button [disabled]="!form2.valid" class="btn btn-lg btn-primary btn-block" type="submit">GO Now</button>
+</form>
+<div *ngIf="data">
+<h3>Name: {{data.name}}</h3>
+<h3>Main: {{data.main}}</h3>
+<h3>Description: {{data.description}}</h3>
+</div>
